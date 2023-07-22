@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+   
+}
+.main{
+    display: flex;
+    height: 100vh;
+    background-color: black;
+    
+}
+.sidebar{
+    background-color:black;
+    width: 340px;
+    border-radius: 1rem;
+    margin: 5px 5px 5px 5px;
+    overflow: hidden;
+    
+}
+.main-content{
+    background-color: rgb(22, 15, 15);
+    flex:1;
+    border-radius: 1rem;
+    overflow: auto;
+    
+}
+.musicplayer{
+    background-color: black ;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 10;
+    display: flex;
+    
+}
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+.nav{
+    color: white;
+    background-color:  rgb(22, 15, 15);
+   border-radius: 0.5rem;
+   height: 120px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 0.75 0.75;
+}
+
+
+.nav-option{
+    line-height: 3rem;
+    font-size: 1.25rem;
+    opacity: 0.7;
+    padding:1px 1px 1px 16px;
+}
+.nav-option:hover{
+    
+    opacity: 1;
+}
+.nav-option a{
+    font-size: 1.25 rem;
+    margin-left: 1;
+}
+.options{
+    color: white;
+    display: flex;
+    padding-top: 1rem;
+    font-size: 1.25rem;
+
+}
+.library{
+    color: white;
+    background-color:  rgb(22, 15, 15);
+   border-radius: 0.5rem;
+   height: 100%;
+   margin-top: 2px;
+   
+   
+}
+.lab-option{
+    padding-right: 10rem;
+    margin-left: 1rem;
+}
+.plus{
+    padding-right: 10px;
+    opacity: 0.4;
+}
+.arrow{
+    opacity: 0.4;
+}
+ .arrow:hover{
+    opacity: 1;
+ }
+ .plus:hover{
+    opacity: 1;
+ }
+.box {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 1rem 1.25rem;
+    height: 8rem;
+    background-color:rgb(47, 46, 46) ;
+    border-radius: 0.75rem;
+    margin-left: 2px;
+   margin-right: 2px;
+   align-content: space-evenly;
+  
+}
+.boxp1{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+.boxp2{
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+.badge{
+    background-color: aliceblue;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    
+    height: 2rem;
+    width: fit-content;
+    color: black;
+}
+.badge2{
+    background-color: rgb(22, 15, 15);
+    color: white;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color:  rgb(34, 32, 32);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 2px 20px;
+    height: 40px;
+    z-index: 10;
+}
+.main-area{
+    overflow-x: hidden;
+    overflow-y: auto; 
+   
+}
+.sticky-nav-icon{
+    font-size: 1.25rem;
+}
+.stick-nav-options{
+    display: flex;
+    margin : 1px;
+    justify-content: center;
+    align-content: baseline;
+    padding-bottom: 30px ;
+   
+}
+.nav-button{
+    margin-left: 10px;
+
+}
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.card-contaner{
+    display: flex;
+    border-radius: 0.5rem;
+    flex-wrap: wrap;
+}
+.card{
+    background-color:rgb(47, 46, 46);
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem ;
+    margin-bottom:1rem ;
+    
+}
+.card-image{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.main-area{
+    padding: 0rem 1.5rem 0rem 1.5rem ;
+
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+.footer{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.card:hover{
+    background-color: rgb(95, 94, 94);
+}
+.musicplayer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album{
+    width: 25%;
+}
+.player{
+    width:50%;
+    
+
+}
+.control{
+    width:25%
+}
+.player-icon img{
+    height: 16px;
+    margin-right: 1rem;
+   
+}
+.player-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+.main-progressbar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width:100%;
+    
+}
